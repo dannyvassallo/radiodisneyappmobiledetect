@@ -1,4 +1,4 @@
-var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/demilovatorules.pdf'
+var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/NewYearNewCountryRules.pdf'
 
 //Detection Script//
   var iPadAgent = navigator.userAgent.match(/iPad/i) != null;
