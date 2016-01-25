@@ -1,4 +1,4 @@
-var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/NewYearNewCountryRules.pdf'
+var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/Alli-Simpson-Sweepstakes-Rules.pdf'
 
 //Detection Script//
   var iPadAgent = navigator.userAgent.match(/iPad/i) != null;
