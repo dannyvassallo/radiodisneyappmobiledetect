@@ -1,4 +1,4 @@
-var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/Alli-Simpson-Sweepstakes-Rules.pdf'
+// var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/Alli-Simpson-Sweepstakes-Rules.pdf'
 
 //Detection Script//
   var iPadAgent = navigator.userAgent.match(/iPad/i) != null;
@@ -12,7 +12,7 @@ var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/Alli-Simpson-S
     if(windowLocation == '/'){
       window.location.replace("http://bit.ly/1h4tYaU");
     } else if(windowLocation == '/rules'){
-      window.location.replace(currentRulesLink);
+      // window.location.replace(currentRulesLink);
     }
   }
 //Android//
@@ -22,7 +22,7 @@ var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/Alli-Simpson-S
     if(windowLocation == '/'){
       window.location.replace("http://bit.ly/1f7t6Zj");
     } else if(windowLocation == '/rules'){
-      window.location.replace(currentRulesLink);
+      // window.location.replace(currentRulesLink);
     }
   }
 //Other//
