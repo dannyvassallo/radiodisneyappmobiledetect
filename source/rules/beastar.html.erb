@@ -1,6 +1,13 @@
-<!-- <object data="../rules-files/rdmabeastarsweeps.pdf" type="application/pdf" width="100%" height="100%">
-  <p>It appears you don't have a PDF plugin for this browser.
-  No biggie... you can <a href="rules-files/rdmabeastarsweeps.pdf">click here to
-  download the PDF file.</a></p>
-</object> -->
-<iframe src="http://docs.google.com/gview?url=http://radiodisneyapp.com/rules-files/rdmabeastarsweeps.pdf&embedded=true" frameborder="0"></iframe>
+---
+title: Sweepstakes & Contest Rules
+---
+<script type="text/javascript">
+  $(function(){
+    var baseUrl = 'http://'+window.location.host;
+    var docName = 'rdmabeastarsweeps.docx';
+    var docUrl = baseUrl+'/rules-files/'+docName;
+    var iframeUrl ='http://docs.google.com/gview?url='+docUrl+'&embedded=true';
+    var a = $('<iframe>').attr('src', iframeUrl);
+    $('body').append(a);
+  });
+</script>
