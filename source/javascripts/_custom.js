@@ -1,36 +1,38 @@
 // var currentRulesLink = 'http://www.radiodisneyapp.com/rules-files/Alli-Simpson-Sweepstakes-Rules.pdf'
 
-//Detection Script//
-  var iPadAgent = navigator.userAgent.match(/iPad/i) != null;
-  var iPodAgent = navigator.userAgent.match(/iPhone/i) != null;
-  var AndroidAgent = navigator.userAgent.match(/Android/i) != null;
-  var webOSAgent = navigator.userAgent.match(/webOS/i) != null;
-//iOS//
-  if(iPadAgent || iPodAgent){
-    ga('send', 'event', 'Detection', 'Device', 'iOS');
-    var windowLocation = window.location.pathname;
-    if(windowLocation == '/'){
-      window.location.replace("http://bit.ly/1h4tYaU");
-    } else if(windowLocation == '/rules'){
-      // window.location.replace(currentRulesLink);
+window.onload = function() {
+  //Detection Script//
+    var iPadAgent = navigator.userAgent.match(/iPad/i) != null;
+    var iPodAgent = navigator.userAgent.match(/iPhone/i) != null;
+    var AndroidAgent = navigator.userAgent.match(/Android/i) != null;
+    var webOSAgent = navigator.userAgent.match(/webOS/i) != null;
+  //iOS//
+    if(iPadAgent || iPodAgent){
+      ga('send', 'event', 'Detection', 'Device', 'iOS');
+      var windowLocation = window.location.pathname;
+      if(windowLocation == '/'){
+        window.location.replace("http://bit.ly/1h4tYaU");
+      } else if(windowLocation == '/rules'){
+        // window.location.replace(currentRulesLink);
+      }
     }
-  }
-//Android//
-  else if(AndroidAgent){
-    ga('send', 'event', 'Detection', 'Device', 'Android');
-    var windowLocation = window.location.pathname;
-    if(windowLocation == '/'){
-      window.location.replace("http://bit.ly/1f7t6Zj");
-    } else if(windowLocation == '/rules'){
-      // window.location.replace(currentRulesLink);
+  //Android//
+    else if(AndroidAgent){
+      ga('send', 'event', 'Detection', 'Device', 'Android');
+      var windowLocation = window.location.pathname;
+      if(windowLocation == '/'){
+        window.location.replace("http://bit.ly/1f7t6Zj");
+      } else if(windowLocation == '/rules'){
+        // window.location.replace(currentRulesLink);
+      }
     }
-  }
-//Other//
-  else{
-    ga('send', 'event', 'Detection', 'Device', 'Not an iPhone or Android');
-    var windowLocation = window.location.pathname;
-    // console.log(windowLocation);
-  }
+  //Other//
+    else{
+      ga('send', 'event', 'Detection', 'Device', 'Not an iPhone or Android');
+      var windowLocation = window.location.pathname;
+      // console.log(windowLocation);
+    }
+}
 
 
 // Clicks
